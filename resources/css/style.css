@@ -71,7 +71,6 @@ ul,li {
     display: inline-block;
     margin-right: 25px;
 }
-
 .main-nav li a:link,
 .main-nav li a:visited {
     color: #ffffff;
@@ -104,7 +103,6 @@ h1 {
 .hero-text-box {
     position: absolute;
     transform: translate(-50%,-50%);
-    z-index: 1;
 }
 
 .hero-logo-box{    
@@ -121,6 +119,11 @@ h1 {
 /*----Slideshow----*/
 
 slider, slider > * {
+    /* What position absolute does is positions the selected element absolute through the entire area of 
+    it's parent element, which is most commonly the root element; in other words the width of the browser screen. 
+    So it brings it to the top of the element stack.
+    To change this you can apply a z-index property to take it behind other elements on the screen. */
+    z-index: -1;
     position: absolute;
     display: block;
     width: 100%;
