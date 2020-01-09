@@ -269,33 +269,55 @@ h2::after{
         width: 40%;
     }
 }
-
+.gamephoto {
+    display: block;
+    position: relative;
+    text-align: center;
+}
 
 .gamephoto img {
-    opacity: 1;
     width: 100%;
-    transform: scale(1);
-    transition: transform 0.5s, opacity 0.5s;
+    border-radius: 10px;
     backface-visibility: hidden;
 }
 
-.gamephoto img:hover{
-    opacity: 0.4;
-    transform: scale(1.02);
-}
 
-.hovertext{
-    transition: 0.5s ease;
+.overlay{
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
     opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
 }
 
-.gamephoto:hover .hovertext{
-    opacity: 1;
+.gamephoto:hover .overlay{
+    opacity: 0.8;
 }
-
-.htxt{
+.gamephoto .overlay .text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.gamephoto .game-title{
+    
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.gamephoto .game-desc{
+    
+    color: #cccccc;
 }
 
 .games-btn{
