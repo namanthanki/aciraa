@@ -70,6 +70,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 /*----Navigation----*/
@@ -114,7 +115,7 @@ header {
 
 /*----Sticky-Navigation----*/
 
-/*.sticky {
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
@@ -130,7 +131,7 @@ header {
     background: -webkit-linear-gradient(#fcbf13, #ea5f3b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}*/
+}
 
 /*----Main Text & Logo----*/
 h1 {
