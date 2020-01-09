@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400&display=swap" rel="stylesheet">
         <title>Aciraa</title>
     </head>        
@@ -35,7 +36,7 @@
 
         <!--SECTION-GAMES-->
 
-        <section id="section-games" class="grid">
+        <section id="section-games js--section-games" class="grid">
             <div class="row">
                 <h2>Our Games</h2>
             </div>
@@ -80,7 +81,7 @@
 
         <!--SECTION-NEWSLETTER-->
 
-        <section>
+        <section id="sect-newsletter" class="row">
             <div class="row">
                 <h3>Join Our Newsletter</h3>
             </div>
@@ -96,6 +97,67 @@
                   <input type="submit" value="Subscribe">
                 </div>
               </form>
-        </section>    
+        </section>  
+        
+        <!--SECTION-BLOG-->
+
+        <section id="sect-blog" class="row">
+            <div class="row">
+                <h4>Blog</h4>
+            </div>
+
+            <div class="row blog-images">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <img src="resources/img/blog-img1.jpg" alt="blog-img1" width="720px" height="720px">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title">Blog Post 1</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, explicabo?<a href="#">read more...</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <img src="resources/img/blog-img2.jpg" alt="blog-img2" width="720px" height="720px">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title">Blog Post 2</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ea.<a href="#">read more...</a>
+                            </p>
+                        </div>
+                    </li>    
+                </ul>
+            </div>
+            <div class="btn">
+                <a class="blog-view-btn" href="#">view blog</a>
+            </div>    
+        </section>
+
+        <!--FOOTER-->
+
+        <footer id="main-footer">
+            <div class="footer-title">
+                <h6>Connect With Us!</h6>    
+            </div>
+            <div>
+                <ul class="link-icons-footer">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+                    <li><a href="#"><i class="ion-social-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p><a href="#" target="_blank">&copy; 2020 Aciraa Games</a>, All Rights Reserved.</p>
+            </div>
+        </footer>    
+
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/script.js"></script>
     </body>
 </html>
