@@ -73,10 +73,11 @@ header {
     background-attachment: fixed;
 }
 
-#gamespage-header {
+#gamespage-header,
+#blogpage-header {
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 40vh;
 }
 
 /*----Navigation----*/
@@ -515,6 +516,13 @@ input[type=submit]:hover {
 /*-------SECTION-BLOG------*/
 /*-----------------------*/
 
+.hero-blog-text-box {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 40%;
+}
+
 #sect-blog {
     padding-top: 0px;
 }
@@ -561,7 +569,8 @@ h5::after{
     margin-top: 20px;
 }
 
-#sect-blog li{
+#sect-blog li,
+#sect-blogpage-blog{
     margin-bottom: 10%;
     background: #f1f1f1;
     color: #1a1a1a;
