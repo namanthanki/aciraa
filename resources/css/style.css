@@ -5,7 +5,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html{
@@ -16,11 +17,13 @@ html{
     font-size: 20px;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
     text-align: center;
     line-height: 1.2;
+    overflow-x: hidden;
 }
 
 .row{
@@ -130,7 +133,22 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border-bottom: 2px solid #ffffff;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
+}
+
+/*----Burger-Navigation----*/
+
+.mobile-burger-nav {
+    float: right;
+    margin-top: 8px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-burger-nav i {
+    font-size: 150%;
+    color: #f1f1f1;
 }
 
 /*----Sticky-Navigation----*/
@@ -141,7 +159,8 @@ header {
     left: 0;
     width: 100%;
     background-color: rgb(26, 26, 26);
-    box-shadow: 0 2px 2px #2e2e2e;
+    -webkit-box-shadow: 0 2px 2px #2e2e2e;
+            box-shadow: 0 2px 2px #2e2e2e;
     z-index: 9999;
 }
 
@@ -168,7 +187,8 @@ h1 {
 .hero-logo-box,
 .hero-text-box {
     position: absolute;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 .hero-logo-box{    
@@ -202,7 +222,8 @@ slider{
 }
 
 slider > * {
-    animation: slide 12s infinite ease;
+    -webkit-animation: slide 12s infinite ease;
+            animation: slide 12s infinite ease;
 }
 
 slide:nth-child(2),
@@ -214,26 +235,61 @@ slide:nth-child(4) {
 }
 
 slide:nth-child(1) {
-    transform: 0%;
-    animation-delay: -1s;
+    -webkit-transform: 0%;
+            transform: 0%;
+    -webkit-animation-delay: -1s;
+            animation-delay: -1s;
     background-image: url("./img/hero.jpg");
     background-size: cover;
     background-position: center;
 }
 
 slide:nth-child(2) {
-    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
     background-image: url("./img/hero2.jpg");
 }
 
 slide:nth-child(3) {
-    animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
     background-image: url("./img/hero3.jpg");
 }
 
 slide:nth-child(4) {
-    animation-delay: 8s;
+    -webkit-animation-delay: 8s;
+            animation-delay: 8s;
     background-image: url("./img/hero4.jpg");
+}
+
+@-webkit-keyframes slide{
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+
+    5% {
+        left: 0%;
+    }
+
+    25% {
+        left: 0%;
+    }
+
+    30% {
+        left: -100%;
+        width: 100%;
+    }
+
+    30.0001% {
+        left: -100%;
+        width: 0%;
+    }
+
+    100% {
+        left: 100%;
+        width: 0%;
+    }
 }
 
 @keyframes slide{
@@ -318,13 +374,19 @@ h2::after{
 @media(min-width: 700px) {
 
     #section-games ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }    
 
     #sect-games-gamespage ul{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     #section-games li {
@@ -344,7 +406,8 @@ h2::after{
 .gamephoto img {
     width: 100%;
     border-radius: 10px;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
 }
 
 .overlay{
@@ -357,6 +420,7 @@ h2::after{
     height: 100%;
     width: 100%;
     opacity: 0;
+    -webkit-transition: .6s ease;
     transition: .6s ease;
     background-color: #000000;
 }
@@ -370,7 +434,6 @@ h2::after{
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -397,7 +460,9 @@ h2::after{
     font-size: 120%;
     text-transform: uppercase;
     text-decoration: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: -webkit-gradient(linear,left top, right top,from(#fcbf13), color-stop(#ea5f3b),color-stop(#37a45f),to(#fcbf13));
     background: linear-gradient(90deg,#fcbf13, #ea5f3b,#37a45f,#fcbf13);
     background-size: 400%;
     text-align: center;
@@ -406,7 +471,17 @@ h2::after{
 }
 
 .games-btn:hover{
-    animation: animate1 6s linear infinite;
+    -webkit-animation: animate1 6s linear infinite;
+            animation: animate1 6s linear infinite;
+}
+@-webkit-keyframes animate1{
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+    }
 }
 @keyframes animate1{
     0%{
@@ -426,17 +501,21 @@ h2::after{
     right: -5px;
     bottom: -5px;
     z-index: -1;
+    background: -webkit-gradient(linear,left top, right top,from(#fcbf13), color-stop(#ea5f3b),color-stop(#ea4470),color-stop(#37a45f),to(#fcbf13));
     background: linear-gradient(90deg,#fcbf13, #ea5f3b,#ea4470,#37a45f,#fcbf13);
     background-size: 400%;
     border-radius: 40px;
     opacity: 0;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .games-btn:hover::before{
-    filter: blur(25px);
+    -webkit-filter: blur(25px);
+            filter: blur(25px);
     opacity: 1;
-    animation: animate1 6s linear infinite;
+    -webkit-animation: animate1 6s linear infinite;
+            animation: animate1 6s linear infinite;
 }
 
 /*---------------------------------*/
@@ -489,7 +568,8 @@ input[type=text] {
     display: inline-block;
     border: 1px solid transparent;
     border-radius: 10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 
 input[type=submit] {
@@ -502,7 +582,9 @@ input[type=submit] {
         font-size: 100%;
         text-transform: uppercase;
         text-decoration: none;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        background: -webkit-gradient(linear,left top, right top,from(#fcbf13), color-stop(#ea5f3b),color-stop(#37a45f),to(#fcbf13));
         background: linear-gradient(90deg,#fcbf13, #ea5f3b,#37a45f,#fcbf13);
         background-size: 400%;
         text-align: center;
@@ -512,7 +594,8 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    animation: animate1 6s linear infinite;
+    -webkit-animation: animate1 6s linear infinite;
+            animation: animate1 6s linear infinite;
 }
 
 @keyframes animate1{
@@ -528,13 +611,6 @@ input[type=submit]:hover {
 /*---------------------------*/
 /*-------SECTION-BLOG------*/
 /*-----------------------*/
-
-.hero-blog-text-box {
-    position: absolute;
-    text-align: center;
-    top: 20%;
-    left: 40%;
-}
 
 #sect-blog {
     padding-top: 0px;
@@ -604,8 +680,11 @@ h5::after{
 @media(min-width: 700px) {
 
     #sect-blog ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }    
 
     #sect-blog li {
@@ -629,16 +708,19 @@ h5::after{
     font-size: 120%;
     text-transform: uppercase;
     text-decoration: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: -webkit-gradient(linear,left top, right top,from(#fcbf13), color-stop(#ea5f3b),color-stop(#37a45f),to(#fcbf13));
     background: linear-gradient(90deg,#fcbf13, #ea5f3b,#37a45f,#fcbf13);
     background-size: 400%;
     text-align: center;
     border-radius: 30px;
     z-index: 1;
-}
+}   
 
 .blog-view-btn:hover{
-    animation: animate1 6s linear infinite;
+    -webkit-animation: animate1 6s linear infinite;
+            animation: animate1 6s linear infinite;
 }
 @keyframes animate1{
     0%{
@@ -658,17 +740,21 @@ h5::after{
     right: -5px;
     bottom: -5px;
     z-index: -1;
+    background: -webkit-gradient(linear,left top, right top,from(#fcbf13), color-stop(#ea5f3b),color-stop(#ea4470),color-stop(#37a45f),to(#fcbf13));
     background: linear-gradient(90deg,#fcbf13, #ea5f3b,#ea4470,#37a45f,#fcbf13);
     background-size: 400%;
     border-radius: 40px;
     opacity: 0;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 
 .blog-view-btn:hover::before{
-    filter: blur(25px);
+    -webkit-filter: blur(25px);
+            filter: blur(25px);
     opacity: 1;
-    animation: animate1 6s linear infinite;
+    -webkit-animation: animate1 6s linear infinite;
+            animation: animate1 6s linear infinite;
 }
 
 .card-content p a:hover,
@@ -727,6 +813,7 @@ h6::after{
 
 .link-icons-footer li a:active,
 .link-icons-footer li a:hover {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -844,6 +931,14 @@ h6::after{
 /*-------------------------*/
 /*-------BLOG-PAGE------*/
 /*---------------------*/
+
+
+.hero-blog-text-box {
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 40%;
+}
 
 #sect-blogpage-blog {
     padding-top: 1%;

@@ -1,0 +1,324 @@
+/* big tablets to 1200px*/
+
+@media only screen and (max-width: 1200px) {
+    
+    section {
+        padding: 12% 4%;
+    }
+
+    .row {
+        padding: 0% 4%;
+    }
+
+    h1 {
+        font-size: 300%;
+        word-spacing: 1px;
+        line-height: 110%;
+        text-align: center;
+    }
+
+    .hero-logo{
+        width: 25%;
+        height: auto;
+    }
+
+    .hero-logo-box{    
+        top: 34%;
+        left: 64%;
+    }
+    
+    .hero-text-box{
+        top: 70%;
+        left: 50%;
+        
+    }
+
+    .nav-logo {
+        width: 3%;
+    }
+
+    .games-btn{
+        left: 40%;
+        width: 20%;
+        height: 4%;
+        font-size: 120%;
+        padding: 3% 0%;
+        margin: 0%;
+    }
+
+    #sect-newsletter {
+        padding: 2% 4%;
+    }
+
+    input[type=submit] {
+        left: 43%;
+        width: 15%;
+        height: 8%;
+        line-height: 4px;
+        font-size: 95%;
+        margin-top: 2%;
+    }
+
+    input[type=text] {
+        width: 60%;
+    }
+
+    #sect-blog {
+        padding: 12% 4%;
+    }
+
+    .blog-view-btn{
+        margin-top: 2%;
+        padding: 2% 0%;
+        left: 41%;
+        width: 18%;
+        line-height: 15px;
+        font-size: 110%;
+    }
+
+    footer {
+        padding: 2% 3%;
+    }
+
+}
+
+/* small tablets to big tablets from 768px to 1023px*/
+
+@media only screen and (max-width: 1023px) {
+
+    h1 {
+        line-height: 120%;
+    }
+
+    .games-btn{
+        left: 39%;
+        width: 20%;
+        height: 4%;
+        font-size: 100%;
+        padding: 3% 0%;
+        margin: 0%;
+    }
+
+    .blog-view-btn{
+        margin: 2% 0% 2% 0%;
+        padding: 3% 0%;
+        left: 39%;
+        width: 20%;
+        height: 8%;
+        line-height: 1px;
+        font-size: 120%;
+    }
+
+}
+
+/* small phones to small tablets from 481px to 767px*/
+
+@media only screen and (max-width: 767px) {
+    
+    .main-nav {
+        margin-right: 10px;
+    }
+
+    .main-nav li {
+        margin-right: 12px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        padding: 3px 0px;
+        font-size: 80%;
+    }
+
+    section {
+        padding: 12% 4%;
+    }
+
+    .row {
+        padding: 0% 4%;
+    }
+
+    h1 {
+        font-size: 280%;
+        word-spacing: 1px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .hero-logo{
+        width: 22%;
+        height: auto;
+    }
+
+    .hero-logo-box{    
+        top: 35%;
+        left: 64%;
+    }
+    
+    .hero-text-box{
+        top: 65%;
+        left: 50%;  
+    }
+
+    .nav-logo {
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .games-btn{
+        left: 36%;
+        width: 25%;
+        height: 8%;
+        font-size: 100%;
+        line-height: 10px;
+        padding: 3% 0%;
+    }
+
+    .container p {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    input[type=submit] {
+        left: 40%;
+        width: 20%;
+        height: 7%;
+        line-height: 4px;
+        font-size: 90%;
+        margin-top: 2%;
+    }
+
+    input[type=text] {
+        width: 80%;
+    }
+
+    .blog-view-btn{
+        margin: 3% 0% 4% 0%;
+        padding: 3% 0%;
+        left: 40%;
+        width: 20%;
+        height: 8%;
+        line-height: 8px;
+        font-size: 100%;
+    }
+
+    #sect-newsletter-gamespage {
+        padding: 12% 4%;
+    }
+
+    footer {
+        padding: 5% 3%;
+    }
+
+    .mobile-burger-nav {
+        display: inline-block;
+    }
+
+    .main-nav {
+        float: left;
+        margin-top: 10px;
+        margin-left: 35px;
+        display: none;
+    }
+
+    .main-nav li {
+        display: block;
+    }
+
+    .main-nav a:link,
+    .main-nav a:visited {
+        display: block;
+        border: 0;
+        padding: 5px 0;
+    }
+}
+
+/* small phones from 0px to 480px*/
+
+@media only screen and (max-width: 480px) {
+
+    section {
+        padding: 10% 4%;
+    }
+
+    .row {
+        padding: 0% 4%;
+    }
+
+    h1 {
+        font-size: 300%;
+        line-height: 110%;
+        letter-spacing: 2px;
+    }
+
+    .hero-logo{
+        width: 35%;
+        height: auto;
+    }
+
+    .hero-logo-box{    
+        top: 28%;
+        left: 63%;
+    }
+    
+    .hero-text-box{
+        top: 65%;
+        left: 50%;
+        
+    }
+
+    .nav-logo {
+        width: 6%;
+    }
+
+    .games-btn{
+        left: 28%;
+        width: 45%;
+        height: 8%;
+        font-size: 100%;
+        padding: 5% 0%;
+    }
+
+    #sect-newsletter {
+        padding: 14% 4%;
+    }
+
+    .container p {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    input[type=submit] {
+        left: 33%;
+        width: 35%;
+        height: 7%;
+        line-height: 4px;
+        font-size: 90%;
+        margin-top: 2%;
+    }
+
+    input[type=text] {
+        width: 90%;
+    }
+
+    #sect-blog {
+        padding: 12% 4%;
+    }
+
+    .blog-view-btn{
+        margin: 1% 0% 2% 0%;
+        padding: 5% 0%;
+        left: 30%;
+        width: 40%;
+        height: 8%;
+        line-height: 8px;
+        font-size: 120%;
+    }
+
+    footer {
+        padding: 12% 3%;
+    }
+
+    #sect-newsletter-gamespage {
+        padding: 10% 4%;
+    }
+}
