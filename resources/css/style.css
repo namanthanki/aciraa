@@ -582,8 +582,7 @@ h5::after{
     margin-top: 20px;
 }
 
-#sect-blog li,
-#sect-blogpage-blog{
+#sect-blog li{
     margin-bottom: 10%;
     background: #f1f1f1;
     color: #1a1a1a;
@@ -834,6 +833,77 @@ h6::after{
 .about-text-box2 {
     margin-left: 15%;
     margin-top: -19%;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*-------------------------*/
+/*-------BLOG-PAGE------*/
+/*---------------------*/
+
+#sect-blogpage-blog {
+    padding-top: 1%;
+}
+
+#sect-blogpage-blog img {
+    width: 40%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: 4%;
+    float: left;
+}
+
+#sect-blogpage-blog .blog-img-box2 {
+    margin-left: 65%;
+    margin-top: 10%;
+    float: left;
+}
+
+.blog-text-box,
+.blog-text-box2 {
+    float: left;
+    font-size: 90%;
+    text-align: justify;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: -1%;
+}
+
+.blog-text-box2 {
+    margin-left: 15%;
+    margin-top: -19%;
+}
+
+.date2 {
+    margin-left: 77%;
+}
+
+.blogpage-blog-title2 {
+    margin-left: 72%;
+}
+
+.blogpage-blog-title1,
+.blogpage-blog-title2 {
+    padding: 0;
+    font-size: 120%;
+    background: -webkit-linear-gradient(#fcbf13, #ea5f3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 2px;
+    text-transform: uppercase;
+}
+
+#sect-blogpage-blog a:active,
+#sect-blogpage-blog a:hover {
+    background: -webkit-linear-gradient(#fcbf13, #ea5f3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .clearfix::after {
