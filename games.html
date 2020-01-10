@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <title>Aciraa</title>
-    </head>        
+        <title>Games</title>
+    </head>
     <body>
-        <header class="grid">
+        <header id="gamespage-header">
             <nav id="navbar">
                 <div class="row">
                     <img src="./resources/img/Aciraa.png" alt="logo" class="nav-logo">
@@ -19,27 +18,16 @@
                         <li><a href="#">Press-kit</a></li>
                     </ul>
                 </div>    
-            </nav>    
-            <div class="hero-logo-box">
-                <img class="hero-logo" src="resources/img/Aciraa.png">
-            </div>
-            <div class="hero-text-box">
-                <h1>Games that reveal <br>real beauty of art</h1>
-            </div>
-            <slider>
-                <slide></slide>
-                <slide></slide>
-                <slide></slide>
-                <slide></slide>
-            </slider>    
-        </header>    
+            </nav>
+        </header>
 
         <!--SECTION-GAMES-->
 
-        <section id="section-games" class="grid js--section-games">
+        <section id="sect-games-gamespage" class="grid js--section-gamespage">
             <div class="row">
                 <h2>Our Games</h2>
             </div>
+
             <div>
                 <ul class="img-cards">
                     <li>
@@ -63,7 +51,22 @@
                             <div class="overlay">
                                 <div class="text">
                                     <div class="game-title">
-                                        game 1
+                                        game 2
+                                    </div>
+                                    <div class="game-desc">
+                                        Here's a game description
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="gamephoto">
+                            <img src="resources/img/gameimg3.jpg" alt="gameimage" width="360px" height="140px">
+                            <div class="overlay">
+                                <div class="text">
+                                    <div class="game-title">
+                                        game 3
                                     </div>
                                     <div class="game-desc">
                                         Here's a game description
@@ -74,14 +77,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="btn">
-                <a class="games-btn" href="#">view all games</a>
-            </div>    
         </section>
 
         <!--SECTION-NEWSLETTER-->
 
-        <section id="sect-newsletter" class="row">
+        <section id="sect-newsletter-gamespage" class="row">
             <div class="row">
                 <h3>Join Our Newsletter</h3>
             </div>
@@ -97,44 +97,6 @@
                   <input type="submit" value="Subscribe">
                 </div>
               </form>
-        </section>  
-        
-        <!--SECTION-BLOG-->
-
-        <section id="sect-blog" class="row">
-            <div class="row">
-                <h4>Blog</h4>
-            </div>
-
-            <div class="row blog-images">
-                <ul>
-                    <li>
-                        <div class="card">
-                            <img src="resources/img/blog-img1.jpg" alt="blog-img1" width="720px" height="720px">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title">Blog Post 1</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, explicabo?<a href="#">read more...</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card">
-                            <img src="resources/img/blog-img2.jpg" alt="blog-img2" width="720px" height="720px">
-                        </div>
-                        <div class="card-content">
-                            <h5 class="card-title">Blog Post 2</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ea.<a href="#">read more...</a>
-                            </p>
-                        </div>
-                    </li>    
-                </ul>
-            </div>
-            <div class="btn">
-                <a class="blog-view-btn" href="#">view blog</a>
-            </div>    
         </section>
 
         <!--FOOTER-->
@@ -155,7 +117,7 @@
             <div class="copyright">
                 <p><a href="#" target="_blank">&copy; 2020 Aciraa Games</a>, All Rights Reserved.</p>
             </div>
-        </footer>    
+        </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>

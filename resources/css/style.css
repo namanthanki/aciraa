@@ -73,6 +73,12 @@ header {
     background-attachment: fixed;
 }
 
+#gamespage-header {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+}
+
 /*----Navigation----*/
 
 .nav-logo {
@@ -250,6 +256,11 @@ slide:nth-child(4) {
 /*-------SECTION-GAMES------*/
 /*------------------------*/
 
+#sect-games-gamespage {
+    padding-bottom: 40px;
+    padding-top: 180px;
+}
+
 .img-cards {
     padding: 1% 0%;
 }
@@ -282,6 +293,12 @@ h2::after{
 
 #section-games li {
     width: 100%;
+    padding: 4%;
+}
+
+#sect-games-gamespage li{
+    width: 100%;
+    padding: 4%;
 }
 
 @media(min-width: 700px) {
@@ -291,7 +308,16 @@ h2::after{
         justify-content: space-around;
     }    
 
+    #sect-games-gamespage ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
     #section-games li {
+        width: 40%;
+    }
+
+    #sect-games-gamespage li{
         width: 40%;
     }
 }
@@ -352,7 +378,7 @@ h2::after{
     left: 40%;
     width: 260px;
     height: 60px;
-    line-height: 10px;
+    line-height: 6px;
     color: #ffffff;
     font-size: 120%;
     text-transform: uppercase;
@@ -402,6 +428,10 @@ h2::after{
 /*---------------------------------*/
 /*-------SECTION-NEWSLETTER------*/
 /*-----------------------------*/
+
+#sect-newsletter-gamespage {
+    padding: 40px 0;
+}
 
 h3 {
     background: -webkit-linear-gradient(#fcbf13, #ea5f3b);
@@ -573,7 +603,7 @@ h5::after{
     left: 40%;
     width: 260px;
     height: 60px;
-    line-height: 10px;
+    line-height: 6px;
     color: #ffffff;
     font-size: 120%;
     text-transform: uppercase;
